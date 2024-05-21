@@ -33,6 +33,7 @@ export class AppComponent implements OnInit{
 
   ngOnInit(): void {
     this.initFontAwesome();
+    this.listenToastService();
   }
   private initFontAwesome(): void {
     this.faIconLibrary.addIcons(...fontAwesomeIcons);
